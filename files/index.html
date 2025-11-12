@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arome — Perfume Store </title>
+ 
+  <link rel="stylesheet" href="project_r/style.css">
+
+</head>
+
+<body>
+
+  <header>
+    <div class="topbar container">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <div style="font-weight:800">AR RAX</div>
+          <div style="font-size:.78rem;color:var(--muted)">Perfume &amp; Fragrances</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+         <li class="dropdown">
+  <a href="#shop">Shop ▾</a>
+  <ul class="dropdown-menu" id="productMenu"></ul>
+</li>
+
+          <li><a href="#best">Best Sellers</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <div style="font-weight:700;color:var(--muted)">Call: (0123) 456789</div>
+        <button class="btn" id="cartBtn">Cart (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-left container">
+        <h1>Fragrances Define You</h1>
+        <p>Explore curated perfumes and unique blends. Find a signature scent for every moment.</p>
+        <div class="cta-row">
+          <button class="btn" onclick="scrollToShop()">Shop Now</button>
+          <button
+            style="background:transparent;border:1px solid var(--accent);padding:.5rem .9rem;border-radius:8px;cursor:pointer;font-weight:700;color:var(--accent)"
+            onclick="openNewsletter()">Subscribe</button>
+        </div>
+      </div>
+
+      <div class="hero-right container">
+        <div class="hero-card">
+          
+          <!-- <img src="C:\project\project\second_h.webp" alt="" srcset="">
+          <br>
+          <img src="project\first_hero.webp" alt="" srcset=""> -->
+
+        </div>
+        <div style="display:flex;gap:1rem;margin-top:1rem;justify-content:space-between">
+          <div
+            style="flex:1;background:linear-gradient(180deg,#fff,#fbf5f4);padding:.8rem;border-radius:10px;text-align:center">
+            New Arrivals</div>
+          <div
+            style="flex:1;background:linear-gradient(180deg,#fff,#fbf5f4);padding:.8rem;border-radius:10px;text-align:center">
+            Limited Editions</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="cat">Eau de Parfum</div>
+      <div class="cat">Eau de Toilette</div>
+      <div class="cat">Body Mists</div>
+      <div class="cat">Gift Sets</div>
+    </section>
+
+    <section id="shop" class="container">
+      <h2 style="margin:0 0.5rem 1rem">Our Best Sellers</h2>
+      <div class="grid" id="productGrid">
+        <!-- products inserted by JS -->
+      </div>
+    </section>
+
+    <section style="padding:1rem;background:linear-gradient(180deg,#fff, #f9f6f6);margin-top:1rem">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem">
+        <div>
+          <h3 style="margin:.2rem 0">Timeless Elegance</h3>
+          <p style="margin:0;color:var(--muted)">Fragrance for every occasion — crafted with care.</p>
+        </div>
+        <div>
+          <button class="btn" onclick="scrollToShop()">Browse Collection</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container" style="display:flex;flex-direction:column;gap:1rem">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+        <div>
+          <div style="font-weight:800">AR RAX</div>
+          <div style="color:var(--muted)">demo@arome.com</div>
+        </div>
+        <div style="color:var(--muted)">@ 2025 Arome Demo </div>
+      </div>
+    </div>
+  </footer>
+  <script src="project_r/script.js"></script>
+ 
+</body>
+
+</html>
